@@ -28,7 +28,9 @@ nav {
     padding: 30px;
     gap: 20px;
 }
-
+.text-primary{
+    color: #FF42A5;
+}
 .ul-section {
     display: flex;
 }
