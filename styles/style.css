@@ -170,7 +170,7 @@ nav li a {
     height: 300px;
 }
 
-.btn {
+/* .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -180,7 +180,7 @@ nav li a {
     padding: 12px 24px;
     border: 0;
     border-radius: 5px;
-}
+} */
 
 .caption {
     color: #534C64;
@@ -193,11 +193,13 @@ nav li a {
 
     margin-top: 50px;
 }
-.play-section-title{
+
+.play-section-title {
     align-items: center;
     font-size: 48px;
     font-weight: 700;
 }
+
 .play-info {
     align-items: center;
     text-align: center;
@@ -207,41 +209,77 @@ nav li a {
 
 .play-in {
     color: rgb(128, 18, 202);
-    
+
 }
-.play-instant-img img{
+
+.play-instant-img img {
     /* height: 90%; */
     margin-left: 200px;
 
 }
-.play-instant{
+
+.play-instant {
     height: 70%;
     margin-left: 150px;
 }
-.baby-img{
+
+.baby-img {
     position: relative;
     width: 150px;
     bottom: 250px;
 }
+
+/* button section styles  */
+.button-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: whitesmoke;
+    margin-top: 20px;
+    gap: 15px;
+
+}
+
+.child-card {
+    display: flex;
+    width: 243px;
+    height: 80px;
+    border-radius: 50px;
+    background: #FFF;
+    align-items: center;
+    gap: 15px;
+}
+
+.child-card:hover {
+    border-radius: 50px;
+    color: #FF42A5;
+    border: 1.5px solid var(--Linear, #FF42A5);
+    background: #FFF;
+}
+
 /* media query */
 
 
 @media screen and (max-width: 576px) {
 
     nav,
-    .banner, .play-instant-container {
+    .banner,
+    .play-instant-container {
         flex-direction: column;
     }
 
     .online-game-container {
         grid-template-columns: 1fr;
     }
+    .button-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-    caption{
+    caption {
         text-align: left;
         align-items: center;
     }
-    .play-info{
+
+    .play-info {
         align-items: center;
         text-align: center;
         padding-left: 200px;
@@ -256,15 +294,19 @@ nav li a {
     }
 }
 
+
 /* medium device media query */
 @media screen and (min-width:576px) and (max-width:992px) {
 
     nav,
-    .banner {
+    .banner, .play-instant-container {
         flex-direction: column;
     }
 
     .online-game-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .button-section {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
