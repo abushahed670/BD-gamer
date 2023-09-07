@@ -1,0 +1,53 @@
+/* work sens font from google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* body {
+    width: 1920px;
+    height: 5927px;
+} */
+
+/* nav styles */
+header {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+.ul-section {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3C354F;
+}
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+}
